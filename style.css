@@ -1,0 +1,280 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #456fe2;
+    color: #eaeaea;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 6px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40x;
+    margin-left: 10px;
+}
+
+.logo-title {
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+
+.logo:hover {
+    color: #EF6A3D;
+    transform: rotate(5deg);
+}
+
+.btn-cta {
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 6px 12px;
+    background: #f3c808;
+    color: #eaeaea;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cta:hover {
+    color: crimson;
+    transform: rotate(5deg);
+}
+
+nav ul {
+    display: flex;
+    padding: 20px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+li a {
+    transition: all .5s ease 0s;
+    display: inline-block;
+}
+
+li a:hover {
+    color: #EF6A3D;
+    transform: rotate(5deg);
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.intro {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title-f {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.img-foto {
+    /* max-width: 100%; */
+    /* width: 300px; */
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    display: flexbox;
+    margin-bottom: -4px;
+}
+
+.img-icon {
+    height: 150px;
+    /* margin-right: auto; */
+    /* margin-top: 15px; */
+
+}
+
+.parallax {
+    background-image: url('assets/foto/airasia.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300vh;
+    margin-top: 0px;
+}
+
+.tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #456fe2;
+    color: #eaeaea;
+    padding: 7px;
+
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.card-item {
+    text-align: center;
+    width: 19.68%;
+    min-height: 140px;
+    max-height: 200px;
+    background: #eaeaea;
+    color: #222;
+    padding: 24px;
+    opacity: 0.7;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    font-size: 30px;
+}
+
+.card-item {
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.card-description {
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #456fe2;
+    color: #eaeaea;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+        opacity: 0.7;
+        /* background: none; */
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .container {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .intro {
+        margin-top: 20px;
+    }
+
+    .img-foto {
+        left: 0;
+        right: 0;
+        margin-top: -160px;
+    }
+
+    .img-icon {
+        flex-direction: column;
+        gap: 0;
+        opacity: 0;
+    }
+
+    .img-abt {
+        margin-top: -25px;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #456fe2;
+        z-index: 9;
+    }
+
+    .title-f {
+        color: #222;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 15px;
+        margin-top: 0px;
+        font-weight: bolder;
+    }
+
+    footer {
+        margin-bottom: 70px;
+        height: 70px;
+    }
+
+
+
+
+}
