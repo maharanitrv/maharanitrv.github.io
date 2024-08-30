@@ -60,6 +60,8 @@ header {
 nav ul {
     display: flex;
     padding: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 li {
